@@ -64,6 +64,7 @@ public enum CoinID {
     CLUBCOIN_MAIN(ClubcoinMain.get()),
     RICHCOIN_MAIN(RichcoinMain.get()),
     IXCOIN_MAIN(IxcoinMain.get()),
+    ARGENTUM_MAIN(ArgentumMain.get()),
     ;
 
     private static List<CoinType> types;

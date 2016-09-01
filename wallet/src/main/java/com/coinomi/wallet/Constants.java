@@ -2,6 +2,7 @@ package com.coinomi.wallet;
 
 import android.text.format.DateUtils;
 
+import com.coinomi.core.coins.ArgentumMain;
 import com.coinomi.core.coins.AsiacoinMain;
 import com.coinomi.core.coins.AuroracoinMain;
 import com.coinomi.core.coins.BatacoinMain;
@@ -47,6 +48,7 @@ import com.coinomi.core.coins.VertcoinMain;
 import com.coinomi.core.coins.VpncoinMain;
 import com.coinomi.core.coins.RichcoinMain;
 import com.coinomi.core.coins.IxcoinMain;
+import com.coinomi.core.coins.ArgentumMain;
 import com.coinomi.core.network.CoinAddress;
 import com.coinomi.stratumj.ServerAddress;
 import com.google.common.collect.ImmutableList;
@@ -188,7 +190,7 @@ public class Constants {
             new CoinAddress(ParkbyteMain.get(),     new ServerAddress("pkb-cce-1.coinomi.net", 5035),
                                                     new ServerAddress("pkb-cce-2.coinomi.net", 5035)),
             new CoinAddress(NxtMain.get(),          new ServerAddress("176.9.65.41", 7876),
-                    new ServerAddress("176.9.65.41", 7876)),
+                                                    new ServerAddress("176.9.65.41", 7876)),
             new CoinAddress(BurstMain.get(),        new ServerAddress("burst-cce-1.coinomi.net", 5051),
                                                     new ServerAddress("burst-cce-2.coinomi.net", 5051)),
             new CoinAddress(VergeMain.get(),        new ServerAddress("xvg-cce-1.coinomi.net", 5036),
@@ -214,7 +216,9 @@ public class Constants {
             new CoinAddress(RichcoinMain.get(),     new ServerAddress("richx-cce-1.coinomi.net", 5046),
                                                     new ServerAddress("richx-cce-2.coinomi.net", 5046)),
             new CoinAddress(IxcoinMain.get(),       new ServerAddress("ixc-cce-1.coinomi.net", 5047),
-                                                    new ServerAddress("ixc-cce-2.coinomi.net", 5047))
+                                                    new ServerAddress("ixc-cce-2.coinomi.net", 5047)),
+            new CoinAddress(ArgentumMain.get(),     new ServerAddress("arg-cce-1.coinomi.net", 5048),
+                                                    new ServerAddress("arg-cce-2.coinomi.net", 5048)
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
@@ -264,6 +268,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.CLUBCOIN_MAIN.getCoinType(), R.drawable.clubcoin);
         COINS_ICONS.put(CoinID.RICHCOIN_MAIN.getCoinType(), R.drawable.richcoin);
         COINS_ICONS.put(CoinID.IXCOIN_MAIN.getCoinType(), R.drawable.ixcoin);
+        COINS_ICONS.put(CoinID.ARGENTUM_MAIN.getCoinType(), R.drawable.argentum);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
@@ -306,6 +311,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.EGULDEN_MAIN.getCoinType(), "https://chainz.cryptoid.info/efl/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.RICHCOIN_MAIN.getCoinType(), "https://explorer.richcoin.us/transaction?transaction=%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.IXCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ixc/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.ARGENTUM_MAIN.getCoinType(), "https://chainz.cryptoid.info/arg/tx.dws?%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
@@ -318,6 +324,7 @@ public class Constants {
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
             BitcoinMain.get(),
+            ArgentumMain.get(),
             AsiacoinMain.get(),
             AuroracoinMain.get(),
             BatacoinMain.get(),

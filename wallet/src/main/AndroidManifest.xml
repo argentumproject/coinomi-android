@@ -106,6 +106,7 @@
                 <data android:scheme="egulden" />
                 <data android:scheme="clubcoin" />
                 <data android:scheme="richcoin" />
+                <data android:scheme="argentum" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
