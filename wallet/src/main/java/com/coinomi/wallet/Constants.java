@@ -217,8 +217,9 @@ public class Constants {
                                                     new ServerAddress("richx-cce-2.coinomi.net", 5046)),
             new CoinAddress(IxcoinMain.get(),       new ServerAddress("ixc-cce-1.coinomi.net", 5047),
                                                     new ServerAddress("ixc-cce-2.coinomi.net", 5047)),
-            new CoinAddress(ArgentumMain.get(),     new ServerAddress("arg-cce-1.coinomi.net", 5048),
-                                                    new ServerAddress("arg-cce-2.coinomi.net", 5048)
+            new CoinAddress(ArgentumMain.get(),     new ServerAddress("arg-cce-1.coinomi.net", 5056),
+                                                    new ServerAddress("arg-cce-2.coinomi.net", 5056),
+                                                    new ServerAddress("52.58.50.77", 50001))
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
