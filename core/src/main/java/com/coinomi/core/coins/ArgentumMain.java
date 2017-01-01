@@ -20,10 +20,10 @@ public class ArgentumMain extends BitFamily {
 		uriScheme = "argentum";
 		bip44Index = 45;
 		unitExponent = 8;
-		feeValue = value(500000); // 0.005 ARG 
-		minNonDust = value(1); // 0.00000001 ARG
-		softDustLimit = value(100000000); // 1 ARG 
-		softDustPolicy = SoftDustPolicy.BASE_FEE_FOR_EACH_SOFT_DUST_TXO;
+		feeValue = value(50000); // 0.0005 ARG 
+		minNonDust = value(27300); // 0.00027300 ARG
+		softDustLimit = value(50000); // 0.0005 ARG 
+		softDustPolicy = SoftDustPolicy.AT_LEAST_BASE_FEE_IF_SOFT_DUST_TXO_PRESENT;
 		signedMessageHeader = toBytes("Argentum Signed Message:\n");
 	}
 
