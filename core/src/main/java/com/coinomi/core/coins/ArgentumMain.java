@@ -12,7 +12,7 @@ public class ArgentumMain extends BitFamily {
 		addressHeader = 23;
 		p2shHeader = 5;
 		acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
-		spendableCoinbaseDepth = 30;
+		spendableCoinbaseDepth = 100;
 		dumpedPrivateKeyHeader = 151;
 
 		name = "Argentum";
